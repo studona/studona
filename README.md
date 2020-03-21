@@ -47,9 +47,10 @@ We use [SemVer](http://semver.org/) for versioning. For available versions, see 
 
 * [Laravel](https://github.com/laravel/laravel) - A PHP framework for web artisans
 * [Vue.js](https://github.com/vuejs/vue) - Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.
+* [vue-i18n](https://github.com/kazupon/vue-i18n) - Internationalization plugin for Vue.js
 * [Tailwind CSS](https://github.com/tailwindcss/tailwindcss) - A utility-first CSS framework for rapid UI development.
 * [Font Awesome Free](https://github.com/FortAwesome/Font-Awesome) - The iconic SVG, font, and CSS toolkit.
-
+https://kazupon.github.io/vue-i18n/introduction.html
 ## Authors
 
 * **Nik** - *Backend development* - [Choreas](https://github.com/Choreas)
