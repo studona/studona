@@ -6,6 +6,7 @@ import VueRouter from 'vue-router';
 import Topicpage from './views/Topicpage';
 import Dashboard from './views/Dashboard';
 import TeacherOverview from "./views/TeacherOverview";
+import NewTask from './views/NewTask';
 
 Vue.use(VueRouter);
 export default new VueRouter({
@@ -22,6 +23,10 @@ export default new VueRouter({
         {
             path: '/teacher', component: TeacherOverview,
             meta: { title: 'Overview' }
+        },
+        {
+            path: '/tasks/new', component: NewTask,
+            meta: { title: 'Neue Aufgabe' }
         }
     ],
     mode: 'history'
