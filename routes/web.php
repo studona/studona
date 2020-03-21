@@ -13,10 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/login', function () {
-    return view('pages.login');
-})->name('login');
-Route::get('/passwordForgot', function () {
-    return view('pages.passwordForgot');
-})->name('passwordForgot');
-
+Route::get('/{any}', 'AppController@index')->where('any', '.*');
