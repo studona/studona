@@ -1,11 +1,18 @@
+//fontawesome free
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+
+//tailwind css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* layouts */
+//layouts 
 @import 'layouts/card.scss';
 
-/* components */
+//components
 @import 'components/form.scss';
 @import 'components/button.scss';
 @import 'components/box.scss';
