@@ -1,12 +1,22 @@
 <template>
     <div>
-        <h1>Dashboard</h1>
+        <div class="page-header">
+            <h1>{{ $t('views.dashboard') }}</h1>
+        </div>
 
-        <h2>Interaktionen</h2>
-        <InteractionList></InteractionList>
+        <div class="card white">
+            <h2>{{ $t('concepts.interactions') }}</h2>
+            <InteractionList></InteractionList>
+        </div>
 
-        <h2>Aufgaben</h2>
-        <TaskList></TaskList>
+        <div class="card blue">
+            <h2>{{ $t('concepts.tasks') }}</h2>
+            <TaskList></TaskList>
+        </div>
+
+        <div class="card orange">
+            <h2>{{ $t('actions.rate') }}</h2>
+        </div>
     </div>
 </template>
 

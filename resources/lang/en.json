@@ -1,5 +1,12 @@
 {
-    "test": {
-        "hello": "Hello"
+    "actions": {
+        "rate": "Rate now"
+    },
+    "concepts": {
+        "interactions": "Interactions",
+        "tasks": "Tasks"
+    },
+    "views": {
+        "dashboard": "Dashboard"
     }
 }
