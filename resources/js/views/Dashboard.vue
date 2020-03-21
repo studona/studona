@@ -18,10 +18,6 @@
                 </li>
             </ul>
 
-            <div class="mt-4 bg-gray-100 border border-gray-400 text-gray-700 px-4 py-3 rounded relative" role="alert">
-                <strong class="font-bold">Keine offenen Aufgaben!</strong>
-                <span class="block sm:inline">Sehr gut, du hast alle Aufgaben für diese Woche bearbeitet.</span>
-            </div>
             <TaskList></TaskList>
         </div>
 
