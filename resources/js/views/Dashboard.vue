@@ -50,6 +50,12 @@
         components: {
             InteractionList,
             TaskList
+        },
+
+        mounted () {
+            axios
+                .get('http://localhost:8000/api/tasks.json')
+                .then(response => (this.info = response.data.bpi))
         }
     }
 </script>

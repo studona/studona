@@ -1,12 +1,24 @@
 {
     "actions": {
-        "rate": "Rate now"
+        "rate": "Rate now",
+        "save": "Save"
     },
     "concepts": {
         "interactions": "Interactions",
         "tasks": "Tasks"
     },
+    "models": {
+        "attributes": {
+            "task": {
+                "description": "Note",
+                "due_until": "Due until",
+                "title": "Title"
+            }
+        },
+        "task": "Task"
+    },
     "views": {
-        "dashboard": "Dashboard"
+        "dashboard": "Dashboard",
+        "new_task": "New Task"
     }
 }
