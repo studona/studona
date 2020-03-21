@@ -4,6 +4,7 @@ import VueRouter from 'vue-router';
 //load components here
 //import COMPONENT from './views/COMPONENT';
 import topicpage from './views/topicpage';
+import Dashboard from './views/Dashboard';
 
 Vue.use(VueRouter);
 export default new VueRouter({
@@ -11,9 +12,12 @@ export default new VueRouter({
 
         {
             path: '/test', component: topicpage,
-            meta: {title: 'Topic' }
+            meta: {title: 'Topic'}
         },
-
+        {
+            path: '/', component: Dashboard,
+            meta: { title: 'Dashboard' }
+        }
     ],
     mode: 'history'
 });

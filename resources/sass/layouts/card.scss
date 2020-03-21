@@ -10,3 +10,31 @@ body.layout-card {
         @apply w-1/4 mx-auto mt-24;
     }
 }
+
+$card-border-radius: 16px;
+
+.card {
+    @apply p-4 pb-8;
+    border-radius: 0;
+    border-top-left-radius: $card-border-radius;
+    margin-top: -$card-border-radius;
+
+    > h2 {
+        @apply font-bold;
+    }
+}
+
+.blue {
+    background-color: #3675e7;
+    color: white;
+}
+
+.orange {
+    background-color: #ff924d;
+    color: black;
+}
+
+.white {
+    background-color: white;
+    color: black;
+}
