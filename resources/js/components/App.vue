@@ -2,8 +2,11 @@
     <div>
         <!-- Main block -->
         <main>
+            <!-- language test -->
+            {{ $t('test.hello') }}
+
             <!-- Content -->
-            <router-view class="content" :user="user"></router-view>
+            <router-view class="content"></router-view>
         </main>
     </div>
 </template>
