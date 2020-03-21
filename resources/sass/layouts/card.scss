@@ -1,0 +1,12 @@
+body.layout-card {
+    @apply h-full min-h-screen w-full;
+}
+#page-login,
+#page-passwordForgot {
+    background: url('/images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .box {
+        @apply w-1/4 mx-auto mt-24;
+    }
+}

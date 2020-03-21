@@ -1,0 +1,34 @@
+.box {
+    @apply shadow-xl bg-gray-200 px-8 pt-4 pb-2 rounded-md;
+    > .box-header {
+        @apply text-center mb-4;
+        > .box-logo {
+            @apply text-gray-800;
+        }
+        > h1 {
+            @apply text-2xl text-gray-700;
+        }
+        > small {
+            @apply text-sm text-gray-500;
+        }
+    }
+    > .box-content {
+
+    }
+    > .box-footer {
+        @apply border-t border-solid border-gray-400 mt-4 text-center pt-1;
+        > a {
+            @apply text-sm;
+            &[href] {
+                @apply text-blue-500;
+                &:hover {
+                    @apply text-blue-400 underline;
+                }
+            }
+        }
+    }
+}
+.box-container-gray {
+    @apply w-full h-full absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+}

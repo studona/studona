@@ -1,0 +1,19 @@
+form {
+    @apply overflow-hidden;
+    .form-group {
+        @apply w-full mb-5;
+    }
+    label {
+        @apply w-full block text-gray-600 mb-1;
+    }
+    input {
+        @apply w-full bg-white appearance-none border-2 rounded-md border-gray-400 py-2 px-4 text-gray-700 leading-tight;
+        &:hover,
+        &:focus {
+            @apply outline-none border-blue-400;
+        }
+    }
+    button {
+        @apply w-full mt-3;
+    }
+}

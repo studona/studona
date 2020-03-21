@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* layouts */
+@import 'layouts/card.scss';
+
+/* components */
+@import 'components/form.scss';
+@import 'components/button.scss';
+@import 'components/box.scss';
