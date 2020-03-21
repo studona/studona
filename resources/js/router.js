@@ -3,7 +3,7 @@ import VueRouter from 'vue-router';
 
 //load components here
 //import COMPONENT from './views/COMPONENT';
-import topicpage from './views/topicpage';
+import Topicpage from './views/Topicpage';
 import Dashboard from './views/Dashboard';
 
 Vue.use(VueRouter);
@@ -11,7 +11,7 @@ export default new VueRouter({
     routes: [
 
         {
-            path: '/test', component: topicpage,
+            path: '/test', component: Topicpage,
             meta: {title: 'Topic'}
         },
         {
