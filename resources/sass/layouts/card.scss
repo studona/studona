@@ -14,23 +14,27 @@ body.layout-card {
 $card-border-radius: 16px;
 
 .card {
-    @apply p-4 pb-8;
+    @apply p-6 pb-8;
     border-radius: 0;
     border-top-left-radius: $card-border-radius;
     margin-top: -$card-border-radius;
 
     > h2 {
-        @apply font-bold;
+        @apply uppercase;
+    }
+
+    &:last-of-type {
+        bottom: 0;
     }
 }
 
 .blue {
-    background-color: #3675e7;
+    background-image: linear-gradient(90deg, #4d85ea 0%, #3675e7 100%);
     color: white;
 }
 
 .orange {
-    background-color: #ff924d;
+    background-image: linear-gradient(90deg, #ff924d 0%, #fd7621 100%);
     color: black;
 }
 

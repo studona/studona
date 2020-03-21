@@ -1,9 +1,7 @@
 .page-header {
-  @apply p-4 pt-8;
-  background-image: linear-gradient(90deg, #4d85ea 0%, #3675e7 100%);
+  @apply p-6 pt-12;
 
   > h1 {
-    @apply text-4xl;
-    color: white;
+    @apply uppercase;
   }
 }
