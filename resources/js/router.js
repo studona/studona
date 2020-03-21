@@ -1,18 +1,16 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-//load components here
-//import COMPONENT from './views/COMPONENT';
+// load components here
+import Dashboard from './views/Dashboard';
 
 Vue.use(VueRouter);
 export default new VueRouter({
     routes: [
-        /*
         {
-            path: '/', component: COMPONENT,
-            meta: {title: 'COMPONENT' }
+            path: '/', component: Dashboard,
+            meta: { title: 'Dashboard' }
         },
-        */
     ],
     mode: 'history'
 });

@@ -1,5 +1,12 @@
 {
-    "test": {
-        "hello": "Hallo"
+    "actions": {
+        "rate": "Bewertung abgeben"
+    },
+    "concepts": {
+        "interactions": "Interaktionen",
+        "tasks": "Aufgaben"
+    },
+    "views": {
+        "dashboard": "Dashboard"
     }
 }

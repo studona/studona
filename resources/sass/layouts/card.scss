@@ -10,3 +10,35 @@ body.layout-card {
         @apply w-1/4 mx-auto mt-24;
     }
 }
+
+$card-border-radius: 16px;
+
+.card {
+    @apply p-6 pb-8;
+    border-radius: 0;
+    border-top-left-radius: $card-border-radius;
+    margin-top: -$card-border-radius;
+
+    > h2 {
+        @apply uppercase;
+    }
+
+    &:last-of-type {
+        bottom: 0;
+    }
+}
+
+.blue {
+    background-image: linear-gradient(90deg, #4d85ea 0%, #3675e7 100%);
+    color: white;
+}
+
+.orange {
+    background-image: linear-gradient(90deg, #ff924d 0%, #fd7621 100%);
+    color: black;
+}
+
+.white {
+    background-color: white;
+    color: black;
+}

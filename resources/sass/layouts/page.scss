@@ -1,0 +1,7 @@
+.page-header {
+  @apply p-6 pt-12;
+
+  > h1 {
+    @apply uppercase;
+  }
+}
