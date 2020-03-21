@@ -5,6 +5,7 @@ import VueRouter from 'vue-router';
 //import COMPONENT from './views/COMPONENT';
 import Topicpage from './views/Topicpage';
 import Dashboard from './views/Dashboard';
+import TeacherOverview from "./views/TeacherOverview";
 
 Vue.use(VueRouter);
 export default new VueRouter({
@@ -17,6 +18,10 @@ export default new VueRouter({
         {
             path: '/', component: Dashboard,
             meta: { title: 'Dashboard' }
+        },
+        {
+            path: '/teacher', component: TeacherOverview,
+            meta: { title: 'Overview' }
         }
     ],
     mode: 'history'
