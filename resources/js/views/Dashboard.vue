@@ -5,19 +5,6 @@
         </div>
 
         <div class="card orange">
-            <h2>{{ $t('models.tasks') }}</h2>
-            <ul class="flex">
-                <li class="flex-1 text-left">
-                    <a class="text-gray-400 uppercase hover:text-gray-100" href="#">Ausstehend</a>
-                </li>
-                <li class="flex-1 text-center">
-                    <a class="text-gray-400 uppercase hover:text-gray-100" href="#">Erledigt</a>
-                </li>
-                <li class="flex-1 text-right">
-                    <a class="text-gray-400 uppercase hover:text-gray-100" href="#">Optional</a>
-                </li>
-            </ul>
-
             <TaskList></TaskList>
         </div>
 
