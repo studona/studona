@@ -18,7 +18,6 @@ class CreateTaskContentsTable extends Migration
             $table->foreign('taskId')->references('id')->on('tasks');
             $table->bigInteger('contentId')->unsigned();
             $table->foreign('contentId')->references('id')->on('contents');
-            $table->dateTime('publishedAt')->nullable();
             $table->timestamps();
 
             $table->primary(array('taskId', 'contentId'));
