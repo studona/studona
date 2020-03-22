@@ -21,13 +21,26 @@
 </template>
 
 <script>
+    import axios from "axios";
+
     export default {
         name: "TeacherOverview",
         components: {
         },
-        props: [
-            'groups'
-        ]
+        data () {
+            return {
+                groups: null
+            }
+        },
+        mounted() {
+            axios.get('/api/Group')
+                .then(response => {
+                    this.groups = response.data.data;
+                })
+                .catch(e => {
+                    this.errors.push(e)
+                });
+        }
     }
 </script>
 
