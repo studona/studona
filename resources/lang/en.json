@@ -3,10 +3,6 @@
         "rate": "Rate now",
         "save": "Save"
     },
-    "concepts": {
-        "interactions": "Interactions",
-        "tasks": "Tasks"
-    },
     "models": {
         "attributes": {
             "task": {
@@ -15,7 +11,13 @@
                 "title": "Title"
             }
         },
-        "task": "Task"
+        "group": "Group",
+        "groups": "Groups",
+        "interactions": "Interactions",
+        "subject": "Subject",
+        "subjects": "Subjects",
+        "task": "Task",
+        "tasks": "Tasks"
     },
     "views": {
         "dashboard": "Dashboard",

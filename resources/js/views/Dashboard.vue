@@ -5,7 +5,7 @@
         </div>
 
         <div class="card orange">
-            <h2>{{ $t('concepts.tasks') }}</h2>
+            <h2>{{ $t('models.tasks') }}</h2>
             <ul class="flex">
                 <li class="flex-1 text-left">
                     <a class="text-gray-400 uppercase hover:text-gray-100" href="#">Ausstehend</a>
@@ -22,7 +22,7 @@
         </div>
 
         <div class="card blue">
-            <h2>{{ $t('concepts.interactions') }}</h2>
+            <h2>{{ $t('models.interactions') }}</h2>
             <div class="mt-4 bg-gray-100 border border-gray-400 text-gray-700 px-4 py-3 rounded relative" role="alert">
                 <strong class="font-bold">Keine Nachrichten!</strong>
                 <span class="block sm:inline">Stelle Fragen oder hacke noch mal nach, falls du auf Antworten wartest.</span>

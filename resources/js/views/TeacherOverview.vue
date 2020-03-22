@@ -7,22 +7,13 @@
                 <h1> Alle Aufgaben </h1>
             </div>
 
-            <div class="card blue" id="teacher_overview_groups">
-                <h2>Gruppen</h2>
-                <!-- 2 Dummy-Buttons -->
-                <button class="btn btn-blue" id="testButton 1">
-                    5
-                </button>
-                <button class="btn btn-blue" id="testButton 2">
-                    6
-                </button>
-                <button class="btn btn-blue" v-for="group in groups" :key="group.id">
-                    {{group.name}}
-                </button>
+            <div class="card orange" id="teacher_overview_groups">
+                <h2>{{ $t('models.groups') }}</h2>
+                <button class="btn btn-blue" v-for="group in groups" :key="group.id">{{ group.name }}</button>
             </div>
 
             <div class="card blue" id="teacher_overview_subjects">
-                <h2>Fächer</h2>
+                <h2>{{ $t('models.subjects') }}</h2>
                 Here is the space for the collapsibles for each subject.
             </div>
         </main>
