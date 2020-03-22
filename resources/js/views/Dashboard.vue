@@ -17,13 +17,8 @@
                     <a class="text-gray-400 uppercase hover:text-gray-100" href="#">Optional</a>
                 </li>
             </ul>
-        </div>
 
-        <div class="card white">
-            <h2>{{ $t('concepts.interactions') }}</h2>
-            <div class="mt-4 bg-gray-100 border border-gray-400 text-gray-700 px-4 py-3 rounded" role="alert">
-                <TaskList></TaskList>
-            </div>
+            <TaskList></TaskList>
         </div>
 
         <div class="card blue">
