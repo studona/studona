@@ -3,7 +3,7 @@ import Vuex from 'vuex';
 import VuexPersist from 'vuex-persist';
 import localForage from 'localforage';
 
-Vue.use(vuex)
+Vue.use(Vuex)
 
 const vuexStorage = new VuexPersist({
     key: 'sourcelink',
