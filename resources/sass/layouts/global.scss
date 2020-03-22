@@ -16,3 +16,14 @@ body {
         width: 12px;
     }
 }
+.only-mobile {
+    @screen md {
+        @apply hidden;
+    }
+}
+.only-desktop {
+    @apply hidden;
+    @screen md {
+        @apply block;
+    }
+}

@@ -1,21 +1,21 @@
 #layout-panel {
     main {
-        @apply flex flex-wrap flex-col w-full;
-        min-height: calc(100vh - 4rem);
+        @apply w-full;
         @screen md {
-            @apply flex-row;
-        }
-        > aside {
-            flex: 275px;
-            @apply bg-blue-500;
+            @apply flex flex-wrap flex-row;
+            min-height: calc(100vh - 4rem);
         }
         > content {
             @apply bg-gray-100;
-            flex: calc(100% - 275px);
-            height: calc(100vh - 4rem);
+            @screen md {
+                flex: calc(100% - 275px);
+                height: calc(100vh - 4rem);
+            }
             > .container {
-                @extend %fancy-scrollbar;
-                @apply overflow-y-scroll px-8 pt-8 pb-12 h-full;
+                @screen md {
+                    @extend %fancy-scrollbar;
+                    @apply overflow-y-scroll px-8 pt-8 pb-12 h-full;
+                }
             }
         }
     }

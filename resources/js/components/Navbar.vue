@@ -23,7 +23,7 @@
                 </li>
             </ul>
         </div>
-        <div class="toggle">
+        <div class="toggle" @click="toggleNavbar">
             <i class="fas fa-bars fa-lg"></i>
         </div>
     </nav>
@@ -32,5 +32,11 @@
 <script>
     export default {
         name: 'Navbar',
+
+        methods: {
+            toggleNavbar: function() {
+                this.$store.state.sidebar_active = !this.$store.state.sidebar_active;
+            }
+        },
     }
 </script>

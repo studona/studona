@@ -60,14 +60,15 @@ nav.navbar {
         }
     }
     > .toggle {
-        @apply float-right text-blue-100 block py-3 text-center;
-        width: 46px;
-        height: 46px;
+        @apply float-right text-blue-100 table py-3 text-center h-16 w-16;
         @screen md {
             @apply hidden;
         }
         &:hover {
             @apply bg-blue-600 cursor-pointer;
+        }
+        > i {
+            @apply h-full table-cell align-middle;
         }
     }
 }

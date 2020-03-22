@@ -14,6 +14,7 @@ export default new Vuex.Store({
     plugins: [vuexStorage.plugin],
     state: {
         'app_name': null,
+        'sidebar_active': false,
     },
     mutations: {
   
