@@ -1,0 +1,16 @@
+.task-list {
+    .task-list-item {
+        @apply bg-white rounded text-black p-4 my-2;
+
+        .label {
+            @apply bg-green-600 rounded text-white p-2 mr-2;
+        }
+
+        .progress-bar {
+            @apply shadow rounded w-full bg-gray-100 mt-2;
+            .progress {
+                @apply bg-orange-500 rounded text-xs leading-none py-1 text-center text-white;
+            }
+        }
+    }
+}

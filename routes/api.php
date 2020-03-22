@@ -17,3 +17,15 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::apiResources([
+    'Content' => 'ContentController',
+    'Group' => 'GroupController',
+    'ObjectType' => 'ObjectTypeController',
+    'Role' => 'RoleController',
+    'Subject' => 'SubjectController',
+    'Task' => 'TaskController',
+    'Topic' => 'TopicController',
+    'ObjectType' => 'ObjectTypeController',
+    'User' => 'UserController',
+    'Userinteraction' => 'UserinteractionController',
+]);

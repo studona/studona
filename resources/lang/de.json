@@ -1,12 +1,27 @@
 {
     "actions": {
-        "rate": "Bewertung abgeben"
+        "rate": "Bewertung abgeben",
+        "save": "Speichern"
     },
-    "concepts": {
+    "models": {
+        "attributes": {
+            "task": {
+                "description": "Notiz",
+                "due_until": "Fällig bis",
+                "title": "Titel"
+            }
+        },
+        "group": "Gruppe",
+        "groups": "Gruppen",
         "interactions": "Interaktionen",
+        "subject": "Fach",
+        "subjects": "Fächer",
+        "task": "Aufgabe",
         "tasks": "Aufgaben"
+
     },
     "views": {
-        "dashboard": "Dashboard"
+        "dashboard": "Dashboard",
+        "new_task": "Neue Aufgabe"
     }
 }
