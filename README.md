@@ -55,7 +55,7 @@ We use [SemVer](http://semver.org/) for versioning. For available versions, see 
 * [localForage](https://github.com/localForage/localForage) - Offline storage, improved. Wraps IndexedDB, WebSQL, or localStorage using a simple but powerful API.
 * [Tailwind CSS](https://github.com/tailwindcss/tailwindcss) - A utility-first CSS framework for rapid UI development.
 * [Font Awesome Free](https://github.com/FortAwesome/Font-Awesome) - The iconic SVG, font, and CSS toolkit.
-https://kazupon.github.io/vue-i18n/introduction.html
+
 ## Authors
 Centralized State Management for Vue.js.
 * **Nik** - *Backend development* - [Choreas](https://github.com/Choreas)
