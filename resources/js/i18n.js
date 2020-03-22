@@ -13,7 +13,7 @@ const messages = {
        ...de
    }
 }
-console.log(messages);
+
 export default new VueI18n({
     locale: 'de',
     fallbackLocale: 'en',

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Userinteraction;
 use Illuminate\Http\Request;
+use App\Http\Resources\Userinteraction as UiResource;
 
 class UserinteractionController extends Controller
 {
@@ -14,7 +15,7 @@ class UserinteractionController extends Controller
      */
     public function index()
     {
-        //
+        return UiResource::collection(Userinteraction::all());
     }
 
     /**
@@ -25,7 +26,10 @@ class UserinteractionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $userinteraction = Userinteraction::create($this->validateData());
+
+        return (new UiResource($userinteraction))
+            ->response();
     }
 
     /**
@@ -36,7 +40,7 @@ class UserinteractionController extends Controller
      */
     public function show(Userinteraction $userinteraction)
     {
-        //
+        return new UiResource($userinteraction);
     }
 
     /**
@@ -48,17 +52,36 @@ class UserinteractionController extends Controller
      */
     public function update(Request $request, Userinteraction $userinteraction)
     {
-        //
+        $userinteraction->update($this->validateDataUpdate($userinteraction));
+
+        return (new UiResource($userinteraction))
+            ->response();
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Userinteraction  $userinteraction
+     * @param \App\Userinteraction $userinteraction
      * @return \Illuminate\Http\Response
+     * @throws \Exception
      */
     public function destroy(Userinteraction $userinteraction)
     {
-        //
+        $userinteraction->delete();
+        return response([]);
+    }
+
+    private function validateData()
+    {
+        return request()->validate([
+            'objectId' => 'required',
+        ]);
+    }
+
+    private function validateDataUpdate(Userinteraction $ui)
+    {
+        return request()->validate([
+            'objectId' => 'required',
+        ]);
     }
 }

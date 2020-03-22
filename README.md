@@ -47,12 +47,14 @@ We use [SemVer](http://semver.org/) for versioning. For available versions, see 
 
 * [Laravel](https://github.com/laravel/laravel) - A PHP framework for web artisans
 * [Vue.js](https://github.com/vuejs/vue) - Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.
-* [vue-i18n](https://github.com/kazupon/vue-i18n) - Internationalization plugin for Vue.js
+* [vuex](https://github.com/vuejs/vuex) - Centralized State Management for Vue.js.
+* [vue-i18n](https://github.com/kazupon/vue-i18n) - Internationalization plugin for Vue.js.
+* [localForage](https://github.com/localForage/localForage) - Offline storage, improved. Wraps IndexedDB, WebSQL, or localStorage using a simple but powerful API.
 * [Tailwind CSS](https://github.com/tailwindcss/tailwindcss) - A utility-first CSS framework for rapid UI development.
 * [Font Awesome Free](https://github.com/FortAwesome/Font-Awesome) - The iconic SVG, font, and CSS toolkit.
 https://kazupon.github.io/vue-i18n/introduction.html
 ## Authors
-
+Centralized State Management for Vue.js.
 * **Nik** - *Backend development* - [Choreas](https://github.com/Choreas)
 * **feldbusl** - *Frontend & Backend development* - [feldbusl](https://github.com/feldbusl)
 * **Philipp Hirsch** - *Frontend development* - [hanspolo](https://github.com/hanspolo)
