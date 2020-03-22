@@ -20,4 +20,12 @@ class Task extends Model
     {
         return $this->belongsToMany('App\User', 'task_users', 'taskId', 'userId');
     }
+    public function taskType()
+    {
+        return $this->belongsTo('App\TaskType', 'taskTypeId');
+    }
+    public function taskUsers()
+    {
+        return $this->hasMany('App\TaskUser', 'taskId');
+    }
 }
