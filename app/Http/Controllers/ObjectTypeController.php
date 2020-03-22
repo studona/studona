@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\ObjectType;
 use Illuminate\Http\Request;
+use App\Http\Resources\ObjectType as OTResource;
 
 class ObjectTypeController extends Controller
 {
@@ -14,7 +15,7 @@ class ObjectTypeController extends Controller
      */
     public function index()
     {
-        //
+        return OTResource::collection(ObjectType::all());
     }
 
     /**
@@ -25,7 +26,10 @@ class ObjectTypeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $ot = ObjectType::create($this->validateData());
+
+        return (new OTResource($ot))
+            ->response();
     }
 
     /**
@@ -36,7 +40,7 @@ class ObjectTypeController extends Controller
      */
     public function show(ObjectType $objectType)
     {
-        //
+        return new OTResource($objectType);
     }
 
     /**
@@ -48,17 +52,36 @@ class ObjectTypeController extends Controller
      */
     public function update(Request $request, ObjectType $objectType)
     {
-        //
+        $objectType->update($this->validateDataUpdate($objectType));
+
+        return (new OTResource($objectType))
+            ->response();
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\ObjectType  $objectType
+     * @param \App\ObjectType $objectType
      * @return \Illuminate\Http\Response
+     * @throws \Exception
      */
     public function destroy(ObjectType $objectType)
     {
-        //
+        $objectType->delete();
+        return response([]);
+    }
+
+    private function validateData()
+    {
+        return request()->validate([
+            'name' => 'required',
+        ]);
+    }
+
+    private function validateDataUpdate(ObjectType $ot)
+    {
+        return request()->validate([
+            'name' => 'required',
+        ]);
     }
 }
