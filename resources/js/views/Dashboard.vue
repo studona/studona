@@ -4,7 +4,7 @@
             <h1>{{ $t('views.dashboard') }}</h1>
         </div>
 
-        <div class="card blue">
+        <div class="card orange">
             <h2>{{ $t('concepts.tasks') }}</h2>
             <ul class="flex">
                 <li class="flex-1 text-left">
@@ -21,17 +21,13 @@
             <TaskList></TaskList>
         </div>
 
-        <div class="card white">
+        <div class="card blue">
             <h2>{{ $t('concepts.interactions') }}</h2>
             <div class="mt-4 bg-gray-100 border border-gray-400 text-gray-700 px-4 py-3 rounded relative" role="alert">
                 <strong class="font-bold">Keine Nachrichten!</strong>
                 <span class="block sm:inline">Stelle Fragen oder hacke noch mal nach, falls du auf Antworten wartest.</span>
             </div>
             <InteractionList></InteractionList>
-        </div>
-
-        <div class="card orange">
-            <h2>{{ $t('actions.rate') }}</h2>
         </div>
     </div>
 </template>
