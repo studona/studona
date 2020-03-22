@@ -20,8 +20,11 @@
 * [License](#license)
 
 ## About the project
+German introduction video for the #WirVsVirus Hackathon:
+https://www.youtube.com/watch?v=HOkq-L8fphI
 
-ToDo
+German project presentation for the #WirVsVirus Hackathon:
+[introductionDE.md](introductionDE.md)
 
 ## Getting started
 
