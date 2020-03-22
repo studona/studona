@@ -19,7 +19,7 @@ $card-border-radius: 16px;
     border-top-left-radius: $card-border-radius;
     margin-top: -$card-border-radius;
 
-    > h2 {
+    h2 {
         @apply uppercase;
     }
 
@@ -41,4 +41,19 @@ $card-border-radius: 16px;
 .white {
     background-color: white;
     color: black;
+}
+
+.green {
+    background-image: linear-gradient(90deg, #04B431 0%, #00FF00 100%);
+    color: white;
+}
+
+.violet {
+    background-image: linear-gradient(90deg, #8000FF 0%, #FA58F4 100%);
+    color: white;
+}
+
+.red {
+    background-image: linear-gradient(90deg, #DF0101 0%, #FF0040 100%);
+    color: white;
 }

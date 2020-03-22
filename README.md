@@ -1,4 +1,7 @@
 <p align="center">
+    <img src="https://avatars2.githubusercontent.com/u/62466546?s=200&v=4"/>
+</p>
+<p align="center">
     <a href="https://github.com/LifeIsLearning2/PrototypA/actions"><img src="https://github.com/LifeIsLearning2/PrototypA/workflows/Laravel/badge.svg" alt="Build action status"></a>
     <a href="https://github.com/LifeIsLearning2/PrototypA/blob/master/LICENSE"><img src="https://img.shields.io/github/license/LifeIsLearning2/PrototypA?label=License&labelColor=30363D&color=2FBF50" alt="License"></a>
     <a href="https://github.com/LifeIsLearning2/PrototypA/releases"><img src="https://img.shields.io/github/downloads/LifeIsLearning2/PrototypA/total?label=Downloads&labelColor=30363D&color=2FBF50" alt="Downloads"></a>

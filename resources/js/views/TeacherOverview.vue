@@ -12,22 +12,41 @@
                 <button class="btn btn-blue" v-for="group in groups" :key="group.id">{{ group.name }}</button>
             </div>
 
-            <div class="card blue" id="teacher_overview_subjects">
+            <div class="card white" id="teacher_overview_subjects">
                 <h2>{{ $t('models.subjects') }}</h2>
-                Here is the space for the collapsibles for each subject.
+
+                <button class="btn bg-gray-400 mr-2" v-for="subject in subjects" :key="subject.id">{{ subject.name }}</button>
+            </div>
+
+            <div class="card blue">
+                <a class="btn btn-blue" href="/tasks/new"><i class="fa fa-plus"></i> Neue Aufgabe</a>
             </div>
         </main>
     </div>
 </template>
 
 <script>
+    import axios from "axios";
+    import { mapState } from 'vuex'
+
+
     export default {
         name: "TeacherOverview",
         components: {
         },
-        props: [
-            'groups'
-        ]
+        computed: mapState([
+            'groups',
+            'subjects'
+        ]),
+        mounted() {
+            axios.get('/api/Group')
+                .then(response => {
+                    this.groups = response.data.data;
+                })
+                .catch(e => {
+                    this.errors.push(e)
+                });
+        }
     }
 </script>
 

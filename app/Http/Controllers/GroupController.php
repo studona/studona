@@ -40,7 +40,7 @@ class GroupController extends Controller
      */
     public function show(Group $group)
     {
-        return new ContentResource($group);
+        return new GroupResource($group);
     }
 
     /**

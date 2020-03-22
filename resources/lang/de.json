@@ -17,7 +17,9 @@
         "subject": "Fach",
         "subjects": "Fächer",
         "task": "Aufgabe",
-        "tasks": "Aufgaben"
+        "tasks": "Aufgaben",
+        "topic": "Thema",
+        "topics": "Themen"
 
     },
     "views": {

@@ -17,7 +17,9 @@
         "subject": "Subject",
         "subjects": "Subjects",
         "task": "Task",
-        "tasks": "Tasks"
+        "tasks": "Tasks",
+        "topic": "Topic",
+        "topics": "Topics"
     },
     "views": {
         "dashboard": "Dashboard",
