@@ -42,3 +42,18 @@ $card-border-radius: 16px;
     background-color: white;
     color: black;
 }
+
+.green {
+    background-image: linear-gradient(90deg, #04B431 0%, #00FF00 100%);
+    color: white;
+}
+
+.violet {
+    background-image: linear-gradient(90deg, #8000FF 0%, #FA58F4 100%);
+    color: white;
+}
+
+.red {
+    background-image: linear-gradient(90deg, #DF0101 0%, #FF0040 100%);
+    color: white;
+}
