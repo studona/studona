@@ -13,6 +13,8 @@ const vuexStorage = new VuexPersist({
 export default new Vuex.Store({
     plugins: [vuexStorage.plugin],
     state: {
+        'app_name': null,
+        'sidebar_active': false,
         users: [{
             id: 1,
             first_name: 'Philipp',

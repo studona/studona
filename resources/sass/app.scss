@@ -9,7 +9,13 @@
 @tailwind components;
 @tailwind utilities;
 
+//layouts
+@import 'layouts/global.scss';
+@import 'layouts/panel.scss';
+
 //components
+@import 'components/navbar.scss';
+@import 'components/sidebar.scss';
 @import 'components/form.scss';
 @import 'components/button.scss';
 @import 'components/box.scss';

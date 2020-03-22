@@ -1,0 +1,36 @@
+aside.sidebar {
+    @extend %fancy-scrollbar;
+    @apply bg-blue-500 w-0 shadow-md overflow-y-auto overflow-x-hidden absolute;
+    transition: all 0.5s;
+    height: calc(100vh - 4rem);
+    &.active {
+        @apply w-full;
+    }
+    @screen md {
+        @apply block static;
+        flex: 275px;
+    }
+    > ul {
+        &:not(:first-child) {
+            @apply border-t border-solid border-blue-700;
+        }
+        > li {
+            @apply w-full;
+            > a {
+                @apply block w-full pl-3 py-2 pr-4 text-blue-100 whitespace-no-wrap;
+                &:hover,
+                &.router-link-exact-active {
+                    &:not(.disabled) {
+                        @apply cursor-pointer bg-blue-600;
+                        > span {
+                            @apply underline;
+                        }
+                    }
+                }
+                > i {
+                    @apply h-4 w-4 mr-2;
+                }
+            }
+        }
+    }
+}

@@ -19,7 +19,7 @@
     </head>
     <body>
         <div id="app">
-            <App></App>
+            <App app_name="{{ config('app.name') }}"></App>
         </div>
     </body>
 </html>
