@@ -23,17 +23,7 @@
             </div>
             <div v-if="tasks && tasks.length">
                 <div class="task-list-item flex" v-for="task in filteredTasks" :key="task.name">
-                    <div class="sm:w-1/6 md:w-1/12"><span class="subject">Fach</span></div>
-                    <div class="sm:w-5/6 md:w-11/12 title">
-                        {{ task.title }}
-                        <div class="text-right font-bold">{{task.completed ? "100%" : "50%"}}</div>
-                        <div class="progress-bar" v-if="!task.completed">
-                            <div class="progress" style="width: 50%"></div>
-                        </div>
-                        <div class="progress-bar" v-else>
-                            <div class="finished" style="width: 100%"></div>
-                        </div>
-                    </div>
+                    <Task v-bind:title="task.title" subject="Fach" v-bind:completed="task.completed" class="title"></Task>
                 </div>
             </div>
         </div>
@@ -47,8 +37,11 @@
 
 <script>
     import axios from 'axios';
+    import Task from './Task';
     export default {
-
+        components: {
+            Task
+        },
         data() {
             return {
                 type: "open",
