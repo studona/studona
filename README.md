@@ -9,7 +9,6 @@
 </p>
 
 ## Table of contents
-
 * [About the project](#about-the-project)
 * [Getting Started](#getting-started)
     * [Requirements](#requirements)
@@ -27,13 +26,11 @@ German project presentation for the #WirVsVirus Hackathon:
 [introductionDE.md](introductionDE.md)
 
 ## Getting started
-
 Before you start, please check whether you have fulfilled all the [requirements](#requirements). If so, jump to [Installing](#installing)¹, if not, start with [Prerequisites](#prerequisites)¹.
 
 ¹) These parts of the documentation are coming soon.
 
 ### Requirements
-
 * Webserver (for example: [nginx](https://www.nginx.com/) or [Apache](https://httpd.apache.org/))
 * Database Server (for example: [MySQL](https://github.com/mysql/mysql-server) or [MariaDB](https://github.com/MariaDB/server))
 * PHP >=7.2 + Extensions²
@@ -46,11 +43,9 @@ There are many ways to help this open source project. Write tutorials, improve d
 For more information and our guidelines, please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
 ## Versioning
-
 We use [SemVer](http://semver.org/) for versioning. For available versions, see the [tags on this repository](https://github.com/LifeIsLearning2/PrototypA/tags). 
 
 ## Built with
-
 * [Laravel](https://github.com/laravel/laravel) - A PHP framework for web artisans
 * [Vue.js](https://github.com/vuejs/vue) - Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.
 * [vuex](https://github.com/vuejs/vuex) - Centralized State Management for Vue.js.
@@ -76,5 +71,4 @@ We use [SemVer](http://semver.org/) for versioning. For available versions, see 
 See also the list of [contributors](https://github.com/LifeIsLearning2/PrototypA/graphs/contributors) who participated in this project.
 
 ## License
-
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
