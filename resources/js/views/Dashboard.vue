@@ -18,6 +18,9 @@
                 </li>
             </ul>
 
+        <div class="card white">
+            <h2>{{ $t('concepts.interactions') }}</h2>
+            <div class="mt-4 bg-gray-100 border border-gray-400 text-gray-700 px-4 py-3 rounded" role="alert">
             <TaskList></TaskList>
         </div>
 
