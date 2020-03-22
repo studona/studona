@@ -13,7 +13,7 @@ const vuexStorage = new VuexPersist({
 export default new Vuex.Store({
     plugins: [vuexStorage.plugin],
     state: {
-  
+        'app_name': null,
     },
     mutations: {
   
