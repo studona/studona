@@ -60,12 +60,18 @@ We use [SemVer](http://semver.org/) for versioning. For available versions, see 
 * [Font Awesome Free](https://github.com/FortAwesome/Font-Awesome) - The iconic SVG, font, and CSS toolkit.
 
 ## Authors
-Centralized State Management for Vue.js.
+* **Feldbusch, Leonie** - *Frontend, Backend development and potential user* - [feldbusl](https://github.com/feldbusl)
+* **Gantenbrink, Sina** - *Design, media and concept*
+* **Hartmann, Simon** - *Concept and potential user*
+* **Hirsch, Philipp** - *Frontend development* - [hanspolo](https://github.com/hanspolo)
+* **Kirch, Titus** - *Frontend and Backend development* - [TitusKirch](https://github.com/TitusKirch)
+* **Köditz, Oliver** - *Design and concept*
 * **Nik** - *Backend development* - [Choreas](https://github.com/Choreas)
-* **feldbusl** - *Frontend & Backend development* - [feldbusl](https://github.com/feldbusl)
-* **Philipp Hirsch** - *Frontend development* - [hanspolo](https://github.com/hanspolo)
-* **Christian Stolz** - *Development* - [hg8496](https://github.com/hg8496)
-* **Titus Kirch** - *Frontend & Backend development* - [TitusKirch](https://github.com/TitusKirch)
+* **Pierk, Jessica** - *Documentation, design, media, concept and potential user*
+* **Stolz, Christian** - *Frontend development* - [hg8496](https://github.com/hg8496)
+* **Stolz, Lavinia** - *Concept and potential user*
+* **Stolz, Nadia** - *Documentation, media and concept*
+* **Stolz, Yesenia** - *Concept and potential user*
 
 See also the list of [contributors](https://github.com/LifeIsLearning2/PrototypA/graphs/contributors) who participated in this project.
 
