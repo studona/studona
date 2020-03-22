@@ -14,7 +14,8 @@
 
             <div class="card blue" id="teacher_overview_subjects">
                 <h2>{{ $t('models.subjects') }}</h2>
-                Here is the space for the collapsibles for each subject.
+
+                <button class="btn btn-blue mr-2" v-for="subject in subjects" :key="subject.id">{{ subject.name }}</button>
             </div>
         </main>
     </div>
@@ -22,16 +23,17 @@
 
 <script>
     import axios from "axios";
+    import { mapState } from 'vuex'
+
 
     export default {
         name: "TeacherOverview",
         components: {
         },
-        data () {
-            return {
-                groups: null
-            }
-        },
+        computed: mapState([
+            'groups',
+            'subjects'
+        ]),
         mounted() {
             axios.get('/api/Group')
                 .then(response => {
