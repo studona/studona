@@ -26,6 +26,10 @@
                 <h2>Tasks</h2>
                 The space for the tasks.
             </div>
+
+            <div class="card blue">
+                <h2>{{ $t('actions.rate') }}</h2>
+            </div>
         </main>
     </div>
 </template>
