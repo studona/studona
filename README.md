@@ -68,3 +68,7 @@ Centralized State Management for Vue.js.
 * **Titus Kirch** - *Frontend & Backend development* - [TitusKirch](https://github.com/TitusKirch)
 
 See also the list of [contributors](https://github.com/LifeIsLearning2/PrototypA/graphs/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
