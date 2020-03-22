@@ -4,7 +4,7 @@
             <h1>{{ $t('views.new_task') }}</h1>
         </div>
 
-        <div class="card blue">
+        <div class="card orange">
           <TaskForm></TaskForm>
         </div>
     </div>
