@@ -2,6 +2,9 @@
     <div>
         <!-- Main block -->
         <main>
+            <select v-model="$i18n.locale">
+                <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang">{{ lang }}</option>
+            </select>
             <!-- Content -->
             <router-view class="content"></router-view>
         </main>
@@ -18,6 +21,7 @@
         },
         data: function() {
             return {
+                langs: ['de', 'en'],
                 title: ''
             }
         },

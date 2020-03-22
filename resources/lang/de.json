@@ -3,10 +3,6 @@
         "rate": "Bewertung abgeben",
         "save": "Speichern"
     },
-    "concepts": {
-        "interactions": "Interaktionen",
-        "tasks": "Aufgaben"
-    },
     "models": {
         "attributes": {
             "task": {
@@ -15,7 +11,14 @@
                 "title": "Titel"
             }
         },
-        "task": "Aufgabe"
+        "group": "Gruppe",
+        "groups": "Gruppen",
+        "interactions": "Interaktionen",
+        "subject": "Fach",
+        "subjects": "Fächer",
+        "task": "Aufgabe",
+        "tasks": "Aufgaben"
+
     },
     "views": {
         "dashboard": "Dashboard",
