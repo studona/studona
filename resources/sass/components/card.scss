@@ -18,6 +18,7 @@ $card-border-radius: 16px;
     border-radius: 0;
     border-top-left-radius: $card-border-radius;
     margin-top: -$card-border-radius;
+    width:100%;
 
     h2 {
         @apply uppercase;

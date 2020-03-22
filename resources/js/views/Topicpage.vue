@@ -33,8 +33,9 @@
             <div class="card violet" id="topic_tasks">
                 <h2>Aufgaben</h2>
                 <div class="mt-4 bg-gray-100 border border-gray-400 text-gray-700 px-4 py-3 rounded relative" role="alert">
-                    <strong class="font-bold">Keine Aufgaben!</strong>
-                    <span class="block sm:inline">Bisher sind keine Aufgaben zu diesem Thema hinterlegt.</span>
+                    <!--<strong class="font-bold">Keine Aufgaben!</strong>
+                    <span class="block sm:inline">Bisher sind keine Aufgaben zu diesem Thema hinterlegt.</span>-->
+                    <FillInTheBlankText></FillInTheBlankText>
                 </div>
             </div>
 
@@ -53,9 +54,12 @@
 </template>
 
 <script>
+    import FillInTheBlankText from "../components/Content/FillInTheBlankText";
+
     export default {
         name: "topicpage",
         components: {
+            FillInTheBlankText,
         }
     }
 </script>
