@@ -12,10 +12,14 @@
                 <button class="btn btn-blue" v-for="group in groups" :key="group.id">{{ group.name }}</button>
             </div>
 
-            <div class="card blue" id="teacher_overview_subjects">
+            <div class="card white" id="teacher_overview_subjects">
                 <h2>{{ $t('models.subjects') }}</h2>
 
-                <button class="btn btn-blue mr-2" v-for="subject in subjects" :key="subject.id">{{ subject.name }}</button>
+                <button class="btn bg-gray-400 mr-2" v-for="subject in subjects" :key="subject.id">{{ subject.name }}</button>
+            </div>
+
+            <div class="card blue">
+                <a class="btn btn-blue" href="/tasks/new"><i class="fa fa-plus"></i> Neue Aufgabe</a>
             </div>
         </main>
     </div>
