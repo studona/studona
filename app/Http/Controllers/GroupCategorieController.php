@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\GroupCategorie;
+use App\Http\Resources\GroupCategorie as GroupCategorieResource;
 use Illuminate\Http\Request;
 
 class GroupCategorieController extends Controller
@@ -14,7 +15,7 @@ class GroupCategorieController extends Controller
      */
     public function index()
     {
-        //
+        return GroupCategorieResource::collection(GroupCategorie::all());
     }
 
     /**
@@ -25,7 +26,10 @@ class GroupCategorieController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $gc = GroupCategorie::create($this->validateData());
+
+        return (new GroupCategorieResource($gc))
+            ->response();
     }
 
     /**
@@ -36,7 +40,7 @@ class GroupCategorieController extends Controller
      */
     public function show(GroupCategorie $groupCategorie)
     {
-        //
+        return new GroupCategorieResource($groupCategorie);
     }
 
     /**
@@ -48,17 +52,38 @@ class GroupCategorieController extends Controller
      */
     public function update(Request $request, GroupCategorie $groupCategorie)
     {
-        //
+        $groupCategorie->update($this->validateDataUpdate($groupCategorie));
+
+        return (new GroupCategorieResource($groupCategorie))
+            ->response();
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\GroupCategorie  $groupCategorie
+     * @param \App\GroupCategorie $groupCategorie
      * @return \Illuminate\Http\Response
+     * @throws \Exception
      */
     public function destroy(GroupCategorie $groupCategorie)
     {
-        //
+        $groupCategorie->delete();
+        return response([]);
+    }
+
+    private function validateData()
+    {
+        return request()->validate([
+            'name' => 'required',
+            'description' => 'nullable',
+        ]);
+    }
+
+    private function validateDataUpdate(GroupCategorie $gc)
+    {
+        return request()->validate([
+            'name' => 'required',
+            'description' => 'nullable',
+        ]);
     }
 }
