@@ -62,7 +62,7 @@ We use [SemVer](http://semver.org/) for versioning. For available versions, see 
 * **Kirch, Titus** - *Frontend and Backend development* - [TitusKirch](https://github.com/TitusKirch)
 * **Köditz, Oliver** - *Design and concept*
 * **Nik** - *Backend development* - [Choreas](https://github.com/Choreas)
-* **Pierk, Jessica** - *Documentation, design, media, concept and potential user*
+* **Pierk, Jessica** - *Documentation, design, media, concept, potential user and motivator*
 * **Stolz, Christian** - *Frontend development* - [hg8496](https://github.com/hg8496)
 * **Stolz, Lavinia** - *Concept and potential user*
 * **Stolz, Nadia** - *Documentation, media and concept*
